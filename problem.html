@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Problem & Solution - QR+</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="problem_solution.html">Problem & Solution</a>
+      <a href="emergency.html">Emergency</a>
+    </nav>
+
+    <h2>Generate Your Emergency QR Code</h2>
+
+    <input type="text" id="name" placeholder="Name" /><br/>
+    <input type="text" id="age" placeholder="Age" /><br/>
+    <input type="text" id="blood" placeholder="Blood Group" /><br/>
+    <input type="text" id="illness" placeholder="Illness / Condition" /><br/>
+
+    <button onclick="generateQR()">Generate QR</button>
+    <div id="qrcode"></div>
+
+    <button id="sendHospitalBtn" style="display:none;">Send to Nearest Hospital</button>
+    <div id="hospitalStatus"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="problem_solution.js"></script>
+</body>
+</html>

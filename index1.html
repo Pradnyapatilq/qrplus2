@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR+ Emergency Health ID</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" class="loader">Loading...</div>
+
+  <div class="container" style="display:none;">
+    <h1>QR+ Emergency Health ID</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="problem_solution.html">Problem & Solution</a>
+      <a href="emergency.html">Emergency</a>
+    </nav>
+    <p>Welcome to the lifesaving platform. Use the menu to explore features.</p>
+  </div>
+
+  <script>
+    window.onload = () => {
+      setTimeout(() => {
+        document.getElementById('loader').style.display = 'none';
+        document.querySelector('.container').style.display = 'block';
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
